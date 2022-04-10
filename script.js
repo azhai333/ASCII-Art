@@ -6,8 +6,10 @@ var pixel;
 var asciiArray = ["$", "@", "B", "%", "8", "&", "W", "M", "#", "*", "o", "a", "h", "k", "b", "d", "p", "q", "w", "m", "Z", "O", "0", "Q", "L", "C", "J", "U", "Y", "X", "z", "c", "v", "u", "n", "x", "r", "j", "f", "t", "/", "|", "(", ")", "1", "{", "}", "[", "]", "?", "-", "_", "+", "~", "<", ">", "i", "!", "l", "I", ";", ":", ',', '"', "^", "`", "'", ".", " "]
 
 var inverse = false
+
+var image = 'pathToImageGoesHere'
  
-Jimp.read('/Users/adamzhai/downloads/Wofffinal.png', (err, image) => {
+Jimp.read(image, (err, image) => {
   if (err) throw err;
   image
    for (var y = 0; y < image.bitmap.height; y++) {
